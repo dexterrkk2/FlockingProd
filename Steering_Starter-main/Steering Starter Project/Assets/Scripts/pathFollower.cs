@@ -29,7 +29,7 @@ public class pathFollower : Kinematic
     protected override void Update()
     {
         steeringUpdate = new SteeringOutput();
-        steeringUpdate.linear = myMoveType.getSteering().linear;
+        steeringUpdate.linear = myMoveType.getSteering().linear * maxSpeed;
         steeringUpdate.angular = flee ? myFleeRotateType.getSteering().angular : mySeekRotateType.getSteering().angular;
         base.Update();
     }

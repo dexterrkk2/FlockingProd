@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObstacleAvoidance : Seek
 {
-    float lookAhead = 3f;
-    float avoidDistance = 5f;
+    float lookAhead = 300f;
+    float avoidDistance = 500f;
     protected override Vector3 getTargetPosition()
     {
         RaycastHit hit;
